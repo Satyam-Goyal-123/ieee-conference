@@ -8,7 +8,6 @@ body {
   width: 100%;
   height: 100%;
 }
-
 /* Logo and text */
 .logo-text {
   /* without padding looks better */
@@ -939,35 +938,45 @@ body {
   right: -33px;
 }
 
-/* .conference-brief h1{
-} */
-
 .conference-brief p{
   padding: 10px;
   font-size: 1.1em;
+}
+.table-container {
+  display: grid; 
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+  gap: 20px; 
+  padding: 20px;
+  background-color: #222D35;
+  border-radius: 5px;
+}
+
+.table-cell {
+  color: #ffffff;
+  padding: 10px; 
+  border: 1px solid #D5B173; 
+  border-radius: 5px; 
+  text-align: center; 
+  font-size: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  min-height: 50px; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: flex-start; 
 }
 
 .footer {
   background-color: #1F2D36;
   padding: 20px;
   color: #cbaa67;
-}
-
-.footer-grid {
   display: grid;
-  grid-template-columns: 1fr; /* Single column */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Vertically align items */
+  place-items: center; /* Centers content both horizontally and vertically */
+  text-align: center; /* Center-align text */
 }
 
-.footer-copyright {
-  text-align: center; /* Center the text */
-}
-
-.footer-copyright p {
+.footer p {
   margin: 0; /* Remove default paragraph margins */
 }
-
 /* Media query (optional - if you need different styling on smaller screens) */
 @media (max-width: 768px) {
   .footer-copyright p {
